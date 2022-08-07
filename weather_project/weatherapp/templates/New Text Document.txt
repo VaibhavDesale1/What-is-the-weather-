@@ -1,0 +1,17 @@
+<html>
+<head>
+	<title> Weather Project by Kamal Sir </title>
+	<style type="text/css">
+		* { font-size:30px;font-family-courier;}	
+	</style>
+</head>
+<body>
+<center>
+	<h1> Weather App </h1>
+	<form method="POST">
+	{% csrf_token %}
+		<input type="text" name="city" placeholder="enter city name" required>
+		<input type="submit" value="Search">
+</center>
+</body>
+</html>

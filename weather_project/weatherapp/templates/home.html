@@ -1,0 +1,20 @@
+{% load static %}
+<html>
+<head>
+	<title> Weather Project by Kamal Sir </title>
+	<style type="text/css">
+		* { font-size:30px;font-family-courier;}	
+	</style>
+</head>
+<body>
+<center>
+	<h1> Weather App </h1>
+	<form method="POST">
+	{% csrf_token %}
+		<input type="text" name="city" placeholder="enter city name" required>
+		<input type="image" src="{% static 'images/s2.jpeg' %}" width=30 height=30>
+	</form>
+	{{ msg }} <img src = {{ icon }}>
+</center>
+</body>
+</html>
